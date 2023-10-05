@@ -8,9 +8,9 @@ void Carnivore::print()const
 		cout << "This specie isn`t exist or dead" << endl;
 		return;
 	}
-	cout << "Power: " << power << endl;
-	cout << "Is alive? " << boolalpha << isAlive << endl;
 	cout << "Specie: " << specie << endl;
+	cout << "Power: " << power << endl;
+	cout << "Is alive? " << boolalpha << isAlive << endl<<endl;
 }
 char* Carnivore:: getSpecie()const
 {

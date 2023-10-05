@@ -18,6 +18,7 @@ Wolf::Wolf(unsigned int power, AnimalWorld* world)
 	specie = new char[strlen("Lion") + 1];
 	strcpy_s(specie, strlen("Lion") + 1, "Lion");
 	continent = new NorthAmerica;
+	world->addCarnivore(this);
 }
 void Wolf:: print()const
 {

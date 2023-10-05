@@ -19,6 +19,8 @@ Wildebeest::Wildebeest(unsigned int weigth, AnimalWorld* world)
 	specie = new char[strlen("Wildebeest") + 1];
 	strcpy_s(specie, strlen("Wildebeest") + 1, "Wildebeest");
 	continent = new Africa;
+	world->addHerbivor(this);
+
 }
 
 void Wildebeest::print()const

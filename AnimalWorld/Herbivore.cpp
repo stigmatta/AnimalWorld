@@ -24,9 +24,9 @@ void Herbivore::setIsAlive(bool alive)
 }
 void Herbivore:: print()const
 {
-	cout << "Weight: " << weight << endl;
-	cout << "Is alive? " <<boolalpha<< isAlive << endl;
 	cout << "Specie: " << specie << endl;
+	cout << "Weight: " << weight << endl;
+	cout << "Is alive? " <<boolalpha<< isAlive << endl<<endl;
 }
 
 unsigned int Herbivore:: getWeight()const
