@@ -1,0 +1,31 @@
+Design an Animal World app that will simulate animal life in different continents of the globe. 
+                  
+
+   In the application, the entire animal world will be divided into: 
+                                 PREPARATORS and Predators (abstract classes).  
+Add a “eat” method to the abstract class “predator”, which will accept an object “herbivore” (a pointer to the abstract class). 
+The inheritors of the class “Continent”, will create concrete objects with names and functions specific to their flora and fauna. 
+All processes in the program will be managed by the “animal world” class (client).
+ The concrete objects are:
+ ∙ Continent (Continent) - an abstract class 
+o Africa - concrete descendant class; 
+o North America - concrete descendant class;
+∙ Herbivore - abstract class; 
+o Gnu Antelope (Wildebeest) - concrete descendant class;
+♣ Weight - a property of a herbivore;
+ ♣ Eat grass - a method of a specific class (adds +10 to weight); 
+♣ Life - property of the animal (characterizes whether the creature is alive or not); 
+o Bison - a specific descendant class;
+ ♣ Weight - property of an herbivore;
+ ♣ Eat grass - specific class method (adds +10 to weight);
+ ♣ Life - property of an animal (characterizes whether the creature is alive or not); 
+∙ Carnivore is an abstract class; 
+o Lion (Lion) - a concrete descendant class;
+♣ Power - a property of a carnivore; 
+♣ Eat herbivore (Eat) - A product-specific method that checks whether the carnivore's strength is greater than the weight of the herbivore it eats. If it is, the carnivore gains +10 to Strength, otherwise, if the strength is less than the weight of the herbivore, the carnivore's strength is reduced by -10. 
+o Wolf (Wolf) - Specific Product;
+ ♣ Power is a property of the carnivore; 
+ ♣ Eat Herbivore - A method for a specific product that checks if the carnivore's Strength is greater than the weight of the herbivore it eats. If it is, the carnivore gains +10 to Strength, otherwise, if the strength is less than the weight of the herbivore, the carnivore's strength is reduced by -10. 
+∙ Animal World - Client;
+ o Meals herbivores (Meals herbivores) - client method that initiates all herbivores to start feeding;
+ 	o Nutrition carnivores - client method that will cause all carnivores to hunt herbivores.
